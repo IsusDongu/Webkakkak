@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <title>AYOO WHAT ARE U DOING HERE</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Tiny5+Duo:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background: #fff5cc;
+            font-family: "Tiny5 Duo", sans-serif;
+            text-align: center;
+            padding-top: 50px;
+        }
+        h1 {
+            color: #ff6600;
+            font-size: 2.5em;
+        }
+        .box {
+            background: white;
+            border-radius: 15px;
+            padding: 25px;
+            max-width: 400px;
+            margin: 0 auto;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        button {
+            background: #ff6600;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 8px;
+            font-size: 1em;
+            cursor: pointer;
+        }
+        button:hover {
+            background: #ff3300;
+        }
+        #message {
+            margin-top: 20px;
+            font-size: 1.1em;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>DON'T CLICK IT</h1>
+
+    <div class="box">
+       <p>DON'T TOUCH IT</p>
+        
+        <button onclick="sayHello()">NO</button>
+        
+        <div id="message"></div>
+    </div>
+
+    <script>
+        function sayHello() {
+            const messages = [
+                "NO BRO",
+                "IF YOU TOUCH IT U GAY",
+                "AND NOW U GAY",
+                "LOL",
+                "HAHA IM JOKING"
+            ];
+            const random = messages[Math.floor(Math.random() * messages.length)];
+            document.getElementById("message").innerHTML = random;
+        }
+    </script>
+
+</body>
+</html>
